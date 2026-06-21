@@ -34,26 +34,26 @@
 
 ### Fitur Wajib
 
-| Fitur | Status | Keterangan |
-|---|---|---|
-| 🔐 Mock Login / Logout | ✅ | Auth berbasis SQLite lokal + SecureStore |
-| 📍 Tracking lokasi 10 detik | ✅ | Menggunakan `expo-location` dengan interval 10 detik |
-| 💾 Simpan ke local database | ✅ | `expo-sqlite` — tabel `locations` |
-| 📶 Offline First | ✅ | Semua operasi berjalan tanpa koneksi internet |
-| 🔄 Auto sync saat online | ✅ | `NetInfo` listener + `SyncService` |
-| 🔌 WebSocket / Socket.IO | ✅ | `SyncService` dengan mode mock fallback |
-| 📜 Halaman Riwayat Lokasi | ✅ | Screen `history.tsx` dengan daftar + timestamp |
-| 🗺️ Halaman Map | ✅ | `react-native-maps` dengan polyline rute |
+| Fitur                       | Status | Keterangan                                           |
+| --------------------------- | ------ | ---------------------------------------------------- |
+| 🔐 Mock Login / Logout      | ✅     | Auth berbasis SQLite lokal + SecureStore             |
+| 📍 Tracking lokasi 10 detik | ✅     | Menggunakan `expo-location` dengan interval 10 detik |
+| 💾 Simpan ke local database | ✅     | `expo-sqlite` — tabel `locations`                    |
+| 📶 Offline First            | ✅     | Semua operasi berjalan tanpa koneksi internet        |
+| 🔄 Auto sync saat online    | ✅     | `NetInfo` listener + `SyncService`                   |
+| 🔌 WebSocket / Socket.IO    | ✅     | `SyncService` dengan mode mock fallback              |
+| 📜 Halaman Riwayat Lokasi   | ✅     | Screen `history.tsx` dengan daftar + timestamp       |
+| 🗺️ Halaman Map              | ✅     | `react-native-maps` dengan polyline rute             |
 
 ### Bonus Point
 
-| Fitur | Status | Keterangan |
-|---|---|---|
-| 🏃 Background Tracking | ✅ | `expo-task-manager` + `expo-location` background |
-| 📐 Geofencing | ✅ | `GeofenceService` dengan radius alert |
-| 🔁 Retry Queue + Exponential Backoff | ✅ | `SyncService` retry dengan backoff berlapis |
-| 🧪 Unit Test | ✅ | 17 test cases (Jest + jest-expo) |
-| 🏛️ Clean Architecture | ✅ | Domain / Data / Presentation layers |
+| Fitur                                | Status | Keterangan                                       |
+| ------------------------------------ | ------ | ------------------------------------------------ |
+| 🏃 Background Tracking               | ✅     | `expo-task-manager` + `expo-location` background |
+| 📐 Geofencing                        | ✅     | `GeofenceService` dengan radius alert            |
+| 🔁 Retry Queue + Exponential Backoff | ✅     | `SyncService` retry dengan backoff berlapis      |
+| 🧪 Unit Test                         | ✅     | 17 test cases (Jest + jest-expo)                 |
+| 🏛️ Clean Architecture                | ✅     | Domain / Data / Presentation layers              |
 
 ---
 
@@ -122,8 +122,7 @@ GeoTrack/
 │
 ├── doc/
 │   ├── Architecture.md           # Dokumentasi arsitektur lengkap
-│   ├── TechnicalReview.md        # Jawaban technical review questions
-│   └── GeoTrack_SRS.md          # Software Requirements Specification
+│   └── TechnicalReview.md        # Jawaban technical review questions
 │
 ├── assets/                       # Icons, splash screen, images
 ├── jest.config.js
@@ -206,20 +205,20 @@ Tests:       17 passed, 17 total
 
 ## 🛠️ Tech Stack
 
-| Kategori | Library | Versi |
-|---|---|---|
-| Framework | React Native | 0.81.5 |
-| Toolchain | Expo | ~54.0.x |
-| Language | TypeScript | ~5.9 |
-| Routing | Expo Router | ~6.0 |
-| State Management | Redux Toolkit | ^2.12 |
-| Local Database | expo-sqlite | ~16.0 |
-| Secure Storage | expo-secure-store | ~15.0 |
-| Location | expo-location | ~19.0 |
-| Background Task | expo-task-manager | ~14.0 |
-| Map | react-native-maps | 1.20.1 |
-| Network Status | @react-native-community/netinfo | 11.4.1 |
-| Testing | Jest + jest-expo | ~29.7 / ~54.0 |
+| Kategori         | Library                         | Versi         |
+| ---------------- | ------------------------------- | ------------- |
+| Framework        | React Native                    | 0.81.5        |
+| Toolchain        | Expo                            | ~54.0.x       |
+| Language         | TypeScript                      | ~5.9          |
+| Routing          | Expo Router                     | ~6.0          |
+| State Management | Redux Toolkit                   | ^2.12         |
+| Local Database   | expo-sqlite                     | ~16.0         |
+| Secure Storage   | expo-secure-store               | ~15.0         |
+| Location         | expo-location                   | ~19.0         |
+| Background Task  | expo-task-manager               | ~14.0         |
+| Map              | react-native-maps               | 1.20.1        |
+| Network Status   | @react-native-community/netinfo | 11.4.1        |
+| Testing          | Jest + jest-expo                | ~29.7 / ~54.0 |
 
 ---
 
@@ -254,16 +253,16 @@ CREATE TABLE IF NOT EXISTS locations (
 
 ### Konfigurasi Tracking
 
-| Parameter | Nilai |
-|---|---|
-| Interval tracking | 10 detik |
-| Background task name | `LOCATION_TRACKING_TASK` |
-| Geofence radius default | 100 meter |
-| Sync retry max attempts | 5 |
-| Backoff base delay | 1000 ms |
+| Parameter               | Nilai                    |
+| ----------------------- | ------------------------ |
+| Interval tracking       | 10 detik                 |
+| Background task name    | `LOCATION_TRACKING_TASK` |
+| Geofence radius default | 100 meter                |
+| Sync retry max attempts | 5                        |
+| Backoff base delay      | 1000 ms                  |
 
 ---
 
 ## 📄 License
 
-MIT © 2025 GeoTrack Team
+MIT © 2026 GeoTrack
